@@ -1,0 +1,23 @@
+pipeline {
+    agent {
+        node {
+        label 'slave01'
+        }
+    }
+stages {
+
+
+stage("PRIMERA PRUEBA") {
+            steps {
+                script {
+                    echo "esta ejecucion quedo de pana"
+                }
+            }
+        }
+
+
+    } // stages
+    
+    
+        
+} // pipeline
