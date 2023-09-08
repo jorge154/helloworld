@@ -11,6 +11,10 @@ stage("PRIMERA PRUEBA") {
             steps {
                 script {
                     echo "esta ejecucion quedo de pana"
+
+                    sh "ansible-playbook /var/lib/jenkins/workspace/intento/hello.yml "
+
+                    echo "el ansible tambien esta de pana"
                 }
             }
         }
