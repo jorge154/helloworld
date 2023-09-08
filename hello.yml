@@ -1,0 +1,6 @@
+---
+- name: Playbook de Hola Mundo
+  hosts: servidores  # Nombre del grupo definido en el inventario
+  tasks:
+    - name: Ejecutar el comando "Hola, mundo"
+      command: echo 'Hola, mundo'
